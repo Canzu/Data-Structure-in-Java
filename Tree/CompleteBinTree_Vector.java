@@ -48,6 +48,8 @@ public class CompleteBinTree_Vector extends BinTree_LinkedList implements Comple
 	/**************CompleteBinTree接口中各方法的实现*******/
 	//生成并返回一个存放e的外部节点，该节点成为新的末节点
 	public BinTreePosition addLast(Object e) {
+		/*这里注意查看CompleteBinTreeNode_Rank.java
+		的构造方法，在构造方法里已将存放e的外部节点插入至向量（或完全二叉树）最末*/
 		BinTreePosition node = new CompleteBinTree_Rank(T, e);
 		root = (BinTreePosition) T.getAtRank(0);
 		return node;
