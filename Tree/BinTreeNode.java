@@ -362,7 +362,7 @@ public class BinTreeNode implements BinTreePosition {
 	}
 
 	//层次遍历以v为根节点的（子）树
-	protected static void postorder(List list, BinTreePosition v) {
+	protected static void levelorder(List list, BinTreePosition v) {
 		Queue_List Q = new Queue_List();//空队
 		Q.enqueue(v);//根节点入队
 		while (!Q.isEmpty()) {
